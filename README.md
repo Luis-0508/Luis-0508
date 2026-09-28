@@ -1,60 +1,36 @@
-# 👋 Hi, I'm Luis
+<div align="center">
 
-I'm a system integration trainee with a passion for automation, scripting, and turning everyday tasks into smart, efficient solutions.  
-I enjoy building tools that simplify workflows, enhance productivity, and bring a bit of "IT magic" to daily life.
+# Hi, I'm Luis 👋
 
----
+**IT systems administration · Linux & Windows · Automation**
 
-## 💡 Skills
+I build and improve infrastructure, self-host useful services, and automate the repetitive parts of IT.
 
-🖥️ Systems & OS  
-• Windows Server & Client Administration  
-• Linux (Debian, Ubuntu, Raspbian)
+</div>
 
-💻 Scripting & Languages  
-• PowerShell, Bash, Batch  
-• JavaScript, HTML & CSS
+## About me
 
-🔗 Automation & Integration  
-• REST API Integration  
-• Task automation & CLI tools
+I'm a systems administrator based in Germany. My interests sit at the intersection of **Linux, virtualization, networking, and practical automation**. I enjoy taking a recurring problem, understanding its root cause, and turning the fix into something documented and repeatable.
 
-🛠️ Tools & Technologies  
-• Docker, Proxmox, Home Assistant  
-• Git, VS Code, Portainer
+- 🖥️ **Infrastructure:** Linux and Windows administration, Active Directory, networking, and Proxmox
+- 🐳 **Self-hosting:** Docker Compose, reverse proxies, VPNs, monitoring, and backups
+- ⚙️ **Automation:** PowerShell, Bash, and small tools that make day-to-day IT work easier
+- 📚 **Learning next:** Ansible and infrastructure as code; Kubernetes is on my longer-term roadmap
 
----
+## Featured projects
 
-## 🚀 Featured Projects
+| Project | What it does |
+| --- | --- |
+| [**sysadmin-scripts**](https://github.com/Luis-0508/sysadmin-scripts) | Practical Windows administration scripts for Active Directory, Outlook, Teams, OneDrive, and common troubleshooting tasks. |
+| [**pizza-order-tool**](https://github.com/Luis-0508/pizza-order-tool) | A multilingual web app for collecting and organizing group pizza orders. [Try the live demo](https://Luis-0508.github.io/pizza-order-tool/). |
+| [**discord-rich-presence**](https://github.com/Luis-0508/discord-rich-presence) | A customizable Discord Rich Presence tool with configurable text, images, and buttons. |
 
-🎮 **[discord-rich-presence](https://github.com/Luis-0508/discord-rich-presence)**  
-Custom Discord status with dynamic buttons, images, and live updates.
+## In my homelab
 
-🍕 **[pizza-order-tool](https://github.com/Luis-0508/pizza-order-tool)**  
-Multilingual pizza ordering app (EN/DE) with interactive UI and real-time feedback.
+My homelab is where I experiment with **Proxmox, Docker, WireGuard, reverse proxies, and monitoring**. I use it to learn how services fit together, test changes, and make setups easier to maintain.
 
-🛠️ **[sysadmin-scripts](https://github.com/Luis-0508/sysadmin-scripts)**  
-Handy automation scripts for everyday IT tasks in Windows and Linux environments.
+I care about straightforward deployments, useful documentation, and knowing how to recover when something breaks.
 
----
+## Let's connect
 
-## 📊 GitHub Stats
-
-![Luis's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Luis-0508&show_icons=true&theme=radical&hide=stars&count_private=true)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Luis-0508&layout=compact&theme=radical)
-
----
-
-## 📡 Connect with me
-
-📍 Niedersachsen, Germany  
-📫 Open to collaboration, automation ideas, or just a chat about tech!
-
-![GitHub followers](https://img.shields.io/github/followers/Luis-0508?label=Followers&style=social)
-![Profile Views](https://komarev.com/ghpvc/?username=Luis-0508&color=blueviolet)
-
----
-
-## 🙌 Thanks for stopping by!
-
-Feel free to explore my work — feedback and ideas are always welcome.
+Have a suggestion for one of my projects or found a bug? Feel free to open an issue in the relevant repository. I'm always interested in exchanging ideas about Linux, automation, and self-hosting.
