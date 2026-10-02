@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 320" width="880" height="320" role="img" aria-labelledby="t d">
+  <title id="t">Hi, I'm Luis</title>
+  <desc id="d">A network map of Luis's projects. Plantarium, Cykla, sysadmin-scripts, pizza-order-tool, discord-rich-presence and homelab are linked to a central node called nerve, which runs in the background.</desc>
+  <style>
+    :root {
+      --bg: #E9EEF2; --surface: #FFFFFF; --ink: #1C2733; --muted: #5E6B78;
+      --line: #A9B6C2; --signal: #C98A00; --core: #3B3F9E;
+      --moss: #4D6B2F; --plum: #7A3E66; --steel: #2B5C8A; --brick: #B5452A; --slate: #5E6B78;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121A22; --surface: #1B2530; --ink: #E4EAF0; --muted: #8A98A6;
+        --line: #3A4856; --signal: #F2B632; --core: #9599F2;
+        --moss: #8DB060; --plum: #C98AB4; --steel: #6FA3D6; --brick: #E07B5F; --slate: #8A98A6;
+      }
+    }
+    .bg { fill: var(--bg); }
+    .sans { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .hello { fill: var(--ink); font-size: 46px; font-weight: 700; letter-spacing: -1.2px; }
+    .lede { fill: var(--ink); font-size: 18px; }
+    .meta { fill: var(--muted); font-size: 12.5px; }
+    .link { stroke: var(--line); stroke-width: 1.5; fill: none; stroke-dasharray: 3 7; stroke-linecap: round;
+            animation: flow 1.6s linear infinite; }
+    .host rect { fill: var(--surface); stroke: var(--line); stroke-width: 1; }
+    .host text { fill: var(--ink); font-size: 12.5px; }
+    .host .kind { fill: var(--muted); font-size: 10.5px; }
+    .core-ring { fill: none; stroke: var(--core); stroke-width: 1.5; opacity: .5;
+                 transform-box: fill-box; transform-origin: center; animation: ping 2.8s ease-out infinite; }
+    .core { fill: var(--core); }
+    .core-label { fill: var(--core); font-size: 13px; font-weight: 700; }
+    .core-sub { fill: var(--muted); font-size: 10.5px; }
+    .led { fill: var(--signal); animation: blink 2.8s ease-in-out infinite; }
+    @keyframes flow { to { stroke-dashoffset: -20; } }
+    @keyframes ping { 0% { transform: scale(1); opacity: .55; } 80%, 100% { transform: scale(2.1); opacity: 0; } }
+    @keyframes blink { 0%, 60%, 100% { opacity: 1; } 70% { opacity: .2; } }
+    @media (prefers-reduced-motion: reduce) {
+      .link, .core-ring, .led { animation: none; }
+    }
+  </style>
+
+  <rect class="bg" width="880" height="320" rx="16"/>
+
+  <!-- Intro -->
+  <text class="sans hello" x="40" y="104">Hi, I'm Luis.</text>
+  <text class="sans lede" x="40" y="146">Sysadmin in Germany.</text>
+  <text class="sans lede" x="40" y="172">I keep networks running and build</text>
+  <text class="sans lede" x="40" y="198">careful little things on the side.</text>
+  <circle class="led" cx="45" cy="262" r="4"/>
+  <text class="mono meta" x="58" y="266">6 hosts mapped, 1 process in the background</text>
+
+  <!-- Links: drawn from nerve outward -->
+  <g>
+    <path class="link" d="M640 160 L505 66"/>
+    <path class="link" d="M640 160 L775 66"/>
+    <path class="link" d="M640 160 L640 46"/>
+    <path class="link" d="M640 160 L505 254"/>
+    <path class="link" d="M640 160 L775 254"/>
+    <path class="link" d="M640 160 L640 276"/>
+  </g>
+
+  <!-- Hosts -->
+  <g class="host mono">
+    <rect x="440" y="48" width="130" height="38" rx="8"/>
+    <circle cx="456" cy="67" r="4.5" fill="var(--moss)"/>
+    <text x="468" y="64">plantarium</text>
+    <text class="kind" x="468" y="78">3D herbarium</text>
+  </g>
+  <g class="host mono">
+    <rect x="710" y="48" width="130" height="38" rx="8"/>
+    <circle cx="726" cy="67" r="4.5" fill="var(--plum)"/>
+    <text x="738" y="64">cykla</text>
+    <text class="kind" x="738" y="78">cycle tracker</text>
+  </g>
+  <g class="host mono">
+    <rect x="585" y="16" width="110" height="34" rx="8"/>
+    <circle cx="600" cy="33" r="4.5" fill="var(--slate)"/>
+    <text x="612" y="37">homelab</text>
+  </g>
+  <g class="host mono">
+    <rect x="430" y="236" width="150" height="38" rx="8"/>
+    <circle cx="446" cy="255" r="4.5" fill="var(--steel)"/>
+    <text x="458" y="252">sysadmin-scripts</text>
+    <text class="kind" x="458" y="266">windows support</text>
+  </g>
+  <g class="host mono">
+    <rect x="700" y="236" width="150" height="38" rx="8"/>
+    <circle cx="716" cy="255" r="4.5" fill="var(--brick)"/>
+    <text x="728" y="252">pizza-order-tool</text>
+    <text class="kind" x="728" y="266">group orders</text>
+  </g>
+  <g class="host mono">
+    <rect x="552" y="276" width="176" height="30" rx="8"/>
+    <circle cx="567" cy="291" r="4.5" fill="var(--slate)"/>
+    <text x="579" y="295">discord-rich-presence</text>
+  </g>
+
+  <!-- NERVE core -->
+  <circle class="core-ring" cx="640" cy="160" r="20"/>
+  <circle class="core" cx="640" cy="160" r="20"/>
+  <circle cx="640" cy="160" r="7" fill="var(--bg)"/>
+  <text class="mono core-label" x="668" y="157">nerve</text>
+  <text class="mono core-sub" x="668" y="172">running in the background</text>
+</svg>
