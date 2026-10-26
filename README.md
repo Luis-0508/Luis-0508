@@ -77,11 +77,9 @@ but it's why the map above has something in the middle.
 
 ## Also on the network
 
-| Host | What it does |
-| --- | --- |
-| [**sysadmin-scripts**](https://github.com/Luis-0508/sysadmin-scripts) | Windows support scripts for Active Directory, Outlook, Teams, OneDrive and Appx cleanup. Each one previews first and only changes the machine when you pass `/apply`. |
-| [**pizza-order-tool**](https://github.com/Luis-0508/pizza-order-tool) | Collects a group's pizza order in English, German, Italian or Greek. [Try it](https://luis-0508.github.io/pizza-order-tool/). |
-| [**discord-rich-presence**](https://github.com/Luis-0508/discord-rich-presence) | A custom Discord Rich Presence with your own text, images and buttons. |
+[**sysadmin-scripts**](https://github.com/Luis-0508/sysadmin-scripts): Windows support scripts for
+Active Directory, Outlook, Teams, OneDrive and Appx cleanup. Each one previews first and only
+changes the machine when you pass `/apply`.
 
 ## Homelab
 
