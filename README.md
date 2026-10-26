@@ -11,6 +11,29 @@ possible, and documented well enough that I'll still understand it in a year.
 <table>
   <tr>
     <td width="50%" valign="top">
+      <a href="https://github.com/Luis-0508/ArchCompose">
+        <img src="https://raw.githubusercontent.com/Luis-0508/ArchCompose/main/docs/screenshots/compose.webp" alt="ArchCompose compose workspace with a render, placed cut-outs of a person and a tree, and the horizon guide">
+      </a>
+      <h3><a href="https://github.com/Luis-0508/ArchCompose">ArchCompose</a></h3>
+      A local-first desktop studio for architectural post-production, drawing sets and
+      presentation boards. Projects are plain files on your disk and nothing is uploaded. Early,
+      but every feature that's there works.
+      <br><br>
+      <sub>Tauri 2, React 19, TypeScript, Rust</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/Luis-0508/homeshelf">
+        <img src="https://raw.githubusercontent.com/Luis-0508/homeshelf/main/docs/images/home.png" alt="HomeShelf start screen with a clock, date, four app tiles and the colour-key legend">
+      </a>
+      <h3><a href="https://github.com/Luis-0508/homeshelf">HomeShelf</a></h3>
+      A fast, remote-first app shelf for 2018 Samsung Tizen 4.0 TVs, plus measured notes on what
+      such a TV really allows: app lifecycle, key handling, SDB and DevTools access.
+      <br><br>
+      <sub>Tizen 4.0 web app, ES5 JavaScript, Python tooling</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
       <a href="https://github.com/Luis-0508/plantarium">
         <img src="https://raw.githubusercontent.com/Luis-0508/plantarium/main/docs/screenshots/plant-view-areca-palm.webp" alt="Plantarium showing a procedurally generated Areca palm in its pot">
       </a>
@@ -54,11 +77,9 @@ but it's why the map above has something in the middle.
 
 ## Also on the network
 
-| Host | What it does |
-| --- | --- |
-| [**sysadmin-scripts**](https://github.com/Luis-0508/sysadmin-scripts) | Windows support scripts for Active Directory, Outlook, Teams, OneDrive and Appx cleanup. Each one previews first and only changes the machine when you pass `/apply`. |
-| [**pizza-order-tool**](https://github.com/Luis-0508/pizza-order-tool) | Collects a group's pizza order in English, German, Italian or Greek. [Try it](https://luis-0508.github.io/pizza-order-tool/). |
-| [**discord-rich-presence**](https://github.com/Luis-0508/discord-rich-presence) | A custom Discord Rich Presence with your own text, images and buttons. |
+[**sysadmin-scripts**](https://github.com/Luis-0508/sysadmin-scripts): Windows support scripts for
+Active Directory, Outlook, Teams, OneDrive and Appx cleanup. Each one previews first and only
+changes the machine when you pass `/apply`.
 
 ## Homelab
 
@@ -73,3 +94,6 @@ TypeScript and React. Next on the list: Ansible and infrastructure as code.
 
 Found a bug or have an idea for one of the projects? Open an issue in that repository. I'm always
 happy to talk about Linux, self-hosting and small tools that save a sysadmin ten minutes a day.
+
+More about me and notes from the homelab: [luis-0508.github.io](https://luis-0508.github.io/)
+(English and German).
