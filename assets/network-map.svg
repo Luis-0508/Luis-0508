@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 320" width="880" height="320" role="img" aria-labelledby="t d">
   <title id="t">Hi, I'm Luis</title>
-  <desc id="d">A network map of Luis's projects. Plantarium, Cykla, sysadmin-scripts, pizza-order-tool, discord-rich-presence and homelab are linked to a central node called nerve, which runs in the background.</desc>
+  <desc id="d">A network map of Luis's projects. ArchCompose, HomeShelf, Plantarium, Cykla, sysadmin-scripts, pizza-order-tool, discord-rich-presence and homelab are linked to a central node called nerve, which runs in the background.</desc>
   <style>
     :root {
       --bg: #E9EEF2; --surface: #FFFFFF; --ink: #1C2733; --muted: #5E6B78;
       --line: #A9B6C2; --signal: #C98A00; --core: #3B3F9E;
-      --moss: #4D6B2F; --plum: #7A3E66; --steel: #2B5C8A; --brick: #B5452A; --slate: #5E6B78;
+      --moss: #4D6B2F; --plum: #7A3E66; --steel: #2B5C8A; --brick: #B5452A; --slate: #5E6B78; --teal: #2E7D74; --sand: #8A6A3B;
     }
     @media (prefers-color-scheme: dark) {
       :root {
         --bg: #121A22; --surface: #1B2530; --ink: #E4EAF0; --muted: #8A98A6;
         --line: #3A4856; --signal: #F2B632; --core: #9599F2;
-        --moss: #8DB060; --plum: #C98AB4; --steel: #6FA3D6; --brick: #E07B5F; --slate: #8A98A6;
+        --moss: #8DB060; --plum: #C98AB4; --steel: #6FA3D6; --brick: #E07B5F; --slate: #8A98A6; --teal: #5FBFB2; --sand: #D2B07A;
       }
     }
     .bg { fill: var(--bg); }
@@ -28,8 +28,8 @@
     .core-ring { fill: none; stroke: var(--core); stroke-width: 1.5; opacity: .5;
                  transform-box: fill-box; transform-origin: center; animation: ping 2.8s ease-out infinite; }
     .core { fill: var(--core); }
-    .core-label { fill: var(--core); font-size: 13px; font-weight: 700; }
-    .core-sub { fill: var(--muted); font-size: 10.5px; }
+    .core-label { fill: var(--core); font-size: 13px; font-weight: 700; text-anchor: middle; }
+    .core-sub { fill: var(--muted); font-size: 10.5px; text-anchor: middle; }
     .led { fill: var(--signal); animation: blink 2.8s ease-in-out infinite; }
     @keyframes flow { to { stroke-dashoffset: -20; } }
     @keyframes ping { 0% { transform: scale(1); opacity: .55; } 80%, 100% { transform: scale(2.1); opacity: 0; } }
@@ -47,7 +47,7 @@
   <text class="sans lede" x="40" y="172">I keep networks running and build</text>
   <text class="sans lede" x="40" y="198">careful little things on the side.</text>
   <circle class="led" cx="45" cy="262" r="4"/>
-  <text class="mono meta" x="58" y="266">6 hosts mapped, 1 process in the background</text>
+  <text class="mono meta" x="58" y="266">8 hosts mapped, 1 process in the background</text>
 
   <!-- Links: drawn from nerve outward -->
   <g>
@@ -56,7 +56,9 @@
     <path class="link" d="M640 160 L640 46"/>
     <path class="link" d="M640 160 L505 254"/>
     <path class="link" d="M640 160 L775 254"/>
-    <path class="link" d="M640 160 L640 276"/>
+    <path class="link" d="M640 222 L640 276"/>
+    <path class="link" d="M640 160 L545 160"/>
+    <path class="link" d="M640 160 L745 160"/>
   </g>
 
   <!-- Hosts -->
@@ -95,10 +97,23 @@
     <text x="579" y="295">discord-rich-presence</text>
   </g>
 
+  <g class="host mono">
+    <rect x="415" y="141" width="130" height="38" rx="8"/>
+    <circle cx="431" cy="160" r="4.5" fill="var(--sand)"/>
+    <text x="443" y="157">archcompose</text>
+    <text class="kind" x="443" y="171">drawing studio</text>
+  </g>
+  <g class="host mono">
+    <rect x="745" y="141" width="110" height="38" rx="8"/>
+    <circle cx="761" cy="160" r="4.5" fill="var(--teal)"/>
+    <text x="773" y="157">homeshelf</text>
+    <text class="kind" x="773" y="171">tv launcher</text>
+  </g>
+
   <!-- NERVE core -->
   <circle class="core-ring" cx="640" cy="160" r="20"/>
   <circle class="core" cx="640" cy="160" r="20"/>
   <circle cx="640" cy="160" r="7" fill="var(--bg)"/>
-  <text class="mono core-label" x="668" y="157">nerve</text>
-  <text class="mono core-sub" x="668" y="172">running in the background</text>
+  <text class="mono core-label" x="640" y="200">nerve</text>
+  <text class="mono core-sub" x="640" y="214">in the background</text>
 </svg>
